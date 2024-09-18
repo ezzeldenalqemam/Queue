@@ -805,7 +805,7 @@
       &.swiper-slide-prev,
       &.swiper-slide-next {
         .testimonial-content {
-          .text {
+          .testimonial-content-text {
             &:after,
             &::before {
               display: none;
@@ -815,7 +815,7 @@
       }
     }
     .testimonial-content {
-      .text {
+      .testimonial-content-text {
         text-align: center;
         width: 65%;
         margin: 0 auto;
