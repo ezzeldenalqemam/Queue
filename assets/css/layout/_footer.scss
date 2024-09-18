@@ -1,0 +1,177 @@
+.footer-section {
+  padding: 45px 0;
+  background: linear-gradient(
+    106.38deg,
+    #232340 1.92%,
+    #2f374e 41.78%,
+    #404f65 94.77%
+  );
+  @include media(772) {
+    padding: 32px 0;
+  }
+  .footer-title {
+    color: $color_white;
+    font-size: 36px;
+    font-weight: 500;
+    @include media(992) {
+      font-size: 24px;
+    }
+    @include media(772) {
+      text-align: center;
+    }
+  }
+  .subscribe-box {
+    width: 60%;
+    margin-left: auto;
+    @include media(1200) {
+      width: 100%;
+    }
+    .title {
+      color: $color_white;
+      font-size: 20px;
+      font-weight: 300;
+      @include media(992) {
+        font-size: 16px;
+      }
+      @include media(772) {
+        text-align: center;
+      }
+    }
+    form {
+      padding: 8px;
+      background: #f3f4f51a;
+      display: flex;
+      border-radius: 50px;
+      align-items: center;
+      justify-content: space-between;
+      input {
+        background-color: transparent;
+        border: 0;
+        color: $color_white;
+        @include dir(rtl) {
+          margin-right: 16px;
+          @include media(992) {
+            margin-right: 0;
+          }
+        }
+        @include dir(ltr) {
+          margin-left: 16px;
+          @include media(992) {
+            margin-left: 0;
+          }
+        }
+        &::placeholder {
+          font-size: 16px;
+          font-weight: 300;
+          color: $color_white;
+        }
+        &:focus {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+      button {
+        padding: 8px 20px;
+        font-size: 16px;
+        border: 1px solid $color_primary;
+        background-color: $color_primary;
+        color: $color_white;
+        border-radius: 50px;
+        @include hover {
+          background-color: $color_white;
+          color: $color_primary;
+        }
+      }
+    }
+  }
+
+  .footer-content {
+    border-top: 1px solid #f7f8f91a;
+    padding: 45px 0 0;
+    margin: 45px 0 0;
+    @include media(772) {
+      padding: 32px 0 0;
+      margin: 32px 0 0;
+    }
+    .content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+      border-bottom: 1px solid #f7f8f91a;
+      padding: 0 0 45px;
+      margin: 0 0 45px;
+
+      @include media(772) {
+        flex-direction: column;
+        padding: 0 0 32px;
+        margin: 0 0 32px;
+      }
+      .links-box {
+        ul {
+          display: flex;
+          gap: 24px;
+          @include media(772) {
+            flex-direction: column;
+            text-align: center;
+          }
+          li {
+            a {
+              color: $color_white;
+              font-size: 16px;
+              font-weight: 400;
+
+              @include hover {
+                color: $color_primary;
+              }
+            }
+          }
+        }
+      }
+      .social-links {
+        display: flex;
+        align-items: center;
+        gap: 18px;
+        a {
+          color: $color_white;
+          font-size: 16px;
+
+          @include hover {
+            color: $color_primary;
+          }
+        }
+      }
+    }
+    .copy-right {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      justify-content: center;
+      @include media(772) {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .text {
+        color: $color_white;
+        font-size: 14px;
+        font-weight: 400;
+      }
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        @include media(772) {
+          flex-direction: column;
+        }
+        li {
+          a {
+            @include hover {
+              color: $color_primary;
+            }
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

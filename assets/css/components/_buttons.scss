@@ -1,0 +1,29 @@
+.qu-button {
+  padding: 11px 30px;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 50px;
+  &.qu-button-box-sm {
+    padding: 8px 20px;
+    font-size: 16px;
+  }
+  @extend %cursors-item;
+  &:not(.qu-button-border) {
+    border: 1px solid $color_primary;
+    background-color: $color_primary;
+    color: $color_white;
+    @include hover {
+      background-color: $color_white;
+      color: $color_primary;
+    }
+  }
+  &:is(.qu-button-border) {
+    color: $color_dark;
+    border: 1px solid $color_dark;
+    background-color: $color_white;
+    @include hover {
+      color: $color_white;
+      background-color: $color_dark;
+    }
+  }
+}
