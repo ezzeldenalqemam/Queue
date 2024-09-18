@@ -40,10 +40,21 @@
     form {
       padding: 8px;
       background: #f3f4f51a;
-      display: flex;
-      border-radius: 50px;
-      align-items: center;
-      justify-content: space-between;
+      @extend%between-flex;
+
+      @extend%round-content;
+      @include media(447) {
+        flex-direction: column;
+        border-radius: 20px !important;
+        justify-content: flex-start;
+        button {
+          width: 100%;
+          margin-top: 12px;
+        }
+        input {
+          width: 100%;
+        }
+      }
       input {
         background-color: transparent;
         border: 0;
@@ -76,7 +87,7 @@
         border: 1px solid $color_primary;
         background-color: $color_primary;
         color: $color_white;
-        border-radius: 50px;
+        @extend%round-content;
         @include hover {
           background-color: $color_white;
           color: $color_primary;
@@ -94,9 +105,7 @@
       margin: 32px 0 0;
     }
     .content {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
+      @extend%between-flex;
       gap: 24px;
       border-bottom: 1px solid #f7f8f91a;
       padding: 0 0 45px;

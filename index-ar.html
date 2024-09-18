@@ -6,14 +6,14 @@
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <meta name="theme-color" content="#fff" />
+    <meta name="theme-color" content="#4ABB82" />
     <meta
       name="description"
-      content='ابدأ العمل مع "كيو" الذي يمكنه توفير كل ما تحتاجه لادارة متجرك, زيادة مبيعاتك و التواصل مع عملائك المميزين.
-    '
+      content="Start working with Queue that can provide everything you need to generate sales, drive traffic, connect with your loyal customers."
     />
-    <link href="assets/css/plugin/bootstrap.rtl.min.css" rel="stylesheet" />
+    <link href="./assets/css/plugin/bootstrap.rtl.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/css/plugin/all.min.css" />
+    <link rel="stylesheet" href="./assets/css/plugin/swiper.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -21,32 +21,2000 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/css/style.css?v=1" />
-    <title>كيو</title>
+    <title>Queue</title>
   </head>
 
-  <body>
+  <body class="body-class">
     <div id="page" class="hfeed site">
       <!--       start header-->
       <div class="header-container">
-        <header class="wrapper"></header>
+        <header class="wrapper">
+          <div class="header-section">
+            <div class="container">
+              <div class="row justify-content-between align-items-center">
+                <div class="col-lg-2 col-md-5 col-5">
+                  <div class="logo-box">
+                    <a href="#">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/Logo.svg"
+                        alt="logo"
+                        class="img-fluid"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-1 col-1">
+                  <div class="nav-box">
+                    <ul class="list-unstyled">
+                      <li>
+                        <a href="#services-section"> خدمات </a>
+                      </li>
+                      <li>
+                        <a href="#fields-section"> مميزاتنا </a>
+                      </li>
+                      <li>
+                        <a href="#pricing-section"> الاسعار </a>
+                      </li>
+                      <li>
+                        <a href="#blog-section"> المدونة </a>
+                      </li>
+                      <li>
+                        <a href="#faq-section">قصص العملاء</a>
+                      </li>
+                    </ul>
+                    <div class="button-box">
+                      <a href="#" class="button-header mb-4"> نسخة تجربية </a>
+                      <a href="#" class="button-header button-header-border">
+                        تسجيل العملاء
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-4">
+                  <div
+                    class="items-box d-flex align-items-center justify-content-end gap-4"
+                  >
+                    <div class="menu-box d-flex align-items-center gap-4">
+                      <select
+                        class="lang-item"
+                        id="pageSelect"
+                        onchange="navigatePage()"
+                      >
+                        <option value="index.html">En</option>
+                        <option value="index-ar.html" selected>Ar</option>
+                      </select>
+                      <div class="menu-icon" id="open-menu">
+                        <i class="fa-solid fa-bars"></i>
+                      </div>
+                      <div class="menu-icon d-none" id="close-menu">
+                        <i class="fa-solid fa-times"></i>
+                      </div>
+                    </div>
+                    <div class="button-box">
+                      <a href="#" class="button-header button-header-border">
+                        تسجيل العملاء
+                      </a>
+                      <a href="#" class="button-header"> نسخة تجربية</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
       </div>
       <!--       end header-->
+
       <!--           start content-->
       <div class="main-container">
         <main class="main wrapper">
-          <h1>عز الدين</h1>
+          <div class="intro-section">
+            <div class="container">
+              <div class="row align-items-center">
+                <div class="col-lg-12 col-md-12">
+                  <div class="intro-text text-center">
+                    <div class="tag-item">
+                      <span class="mx-auto">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/sparkle.svg"
+                          alt="img"
+                        />
+                        <span class="text">منصة كيو</span>
+                      </span>
+                    </div>
+                    <h1 class="intro-title">
+                      تواجد على الإنترنت باستخدام موقع ويب مخصص لإدارة متجرك
+                    </h1>
+                    <p class="intro-prag mx-auto">
+                      ابدأ العمل مع "كيو" الذي يمكنه توفير كل ما تحتاجه لادارة
+                      متجرك, زيادة مبيعاتك و التواصل مع عملائك المميزين.
+                    </p>
+                    <div
+                      class="qu-button-box d-flex gap-4 justify-content-center"
+                    >
+                      <a href="#" class="qu-button"> حجز نسخة تجربية</a>
+                      <a href="#" class="qu-button qu-button-border">
+                        تحدث الي المبيعات
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="intro-image">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/pic-intro.png"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="trusted-section" id="trusted-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="text-center">
+                    <h2 class="section-title">موثوق به من قبل</h2>
+                    <p class="section-prag py-4">
+                      إنهم ليسوا عملاؤنا، بل شركاء في النجاح
+                    </p>
+                  </div>
+                  <div class="img-box">
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Union.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Union-1.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Vector.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Company logo-1.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Company logo-2.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Company logo-3.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Company logo-4.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/Company logo.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/image 51.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/image 53.svg"
+                      alt="logo"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="services-section" id="services-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tag-item mb-4">
+                    <span class="mx-auto">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/services.svg"
+                        alt="img"
+                      />
+                      <span class="text">خدماتنا</span>
+                    </span>
+                  </div>
+                  <div class="section-title text-center">
+                    <h2 class="title">تتبع طرق جديدة لادارة اعمال متجرك</h2>
+                    <p class="prag mx-auto">
+                      منصة كيو تقدم لك العديد من الخدمات التي ستساعدك في تحسين
+                      متجرك و زيادة مبيعاتك
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="tabs-box">
+                    <ul
+                      class="d-flex tab-items"
+                      id="services-tab"
+                      role="tablist"
+                    >
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class="active"
+                          id="services-sales-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#services-sales"
+                          type="button"
+                          role="tab"
+                          aria-controls="services-sales"
+                          aria-selected="true"
+                        >
+                          <img
+                            loading="lazy"
+                            src="/assets/imgs/Sales.svg"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                          المبيعات
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class=""
+                          id="services-manage-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#services-manage"
+                          type="button"
+                          role="tab"
+                          aria-controls="services-manage"
+                          aria-selected="false"
+                        >
+                          <img
+                            loading="lazy"
+                            src="/assets/imgs/Manage.svg"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                          الادارة
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class=""
+                          id="services-reports-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#services-reports"
+                          type="button"
+                          role="tab"
+                          aria-controls="services-reports"
+                          aria-selected="false"
+                        >
+                          <img
+                            loading="lazy"
+                            src="/assets/imgs/Reports.svg"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                          التقارير
+                        </button>
+                      </li>
+                      <li class="nav-item" role="presentation">
+                        <button
+                          class=""
+                          id="services-marketing-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#services-marketing"
+                          type="button"
+                          role="tab"
+                          aria-controls="services-marketing"
+                          aria-selected="false"
+                        >
+                          <img
+                            loading="lazy"
+                            src="/assets/imgs/Marketing.svg"
+                            alt="img"
+                            class="img-fluid"
+                          />
+                          التسويق
+                        </button>
+                      </li>
+                    </ul>
+                    <div class="tab-content" id="services-tabContent">
+                      <div
+                        class="tab-pane fade show active"
+                        id="services-sales"
+                        role="tabpanel"
+                        aria-labelledby="services-sales-tab"
+                        tabindex="0"
+                      >
+                        <div class="services-box">
+                          <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                              <div class="content">
+                                <h3 class="title">
+                                  تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                                </h3>
+                                <p class="prag py-4">
+                                  إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح
+                                  لعملائك تصفح وشراء منتجاتك باستخدام طرق دفع
+                                  متنوعة ومختلفة.
+                                </p>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>موقع
+                                    متجاوب مع جميع الاجهزة.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تصاميم عصرية و حديثة و قابلة للتعديل.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تجربة شراء و تسوق مريحة للعملاء.
+                                  </li>
+                                </ul>
+                                <a href="#" class="learn-more-link"
+                                  >اعرف المزيد
+                                  <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/sales_img.svg"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="services-manage"
+                        role="tabpanel"
+                        aria-labelledby="services-manage-tab"
+                        tabindex="0"
+                      >
+                        <div class="services-box">
+                          <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                              <div class="content">
+                                <h3 class="title">
+                                  تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                                </h3>
+                                <p class="prag py-4">
+                                  إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح
+                                  لعملائك تصفح وشراء منتجاتك باستخدام طرق دفع
+                                  متنوعة ومختلفة.
+                                </p>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>موقع
+                                    متجاوب مع جميع الاجهزة.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تصاميم عصرية و حديثة و قابلة للتعديل.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تجربة شراء و تسوق مريحة للعملاء.
+                                  </li>
+                                </ul>
+                                <a href="#" class="learn-more-link"
+                                  >اعرف المزيد
+                                  <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/manage_pic.svg"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="services-reports"
+                        role="tabpanel"
+                        aria-labelledby="services-reports-tab"
+                        tabindex="0"
+                      >
+                        <div class="services-box">
+                          <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                              <div class="content">
+                                <h3 class="title">
+                                  تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                                </h3>
+                                <p class="prag py-4">
+                                  إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح
+                                  لعملائك تصفح وشراء منتجاتك باستخدام طرق دفع
+                                  متنوعة ومختلفة.
+                                </p>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>موقع
+                                    متجاوب مع جميع الاجهزة.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تصاميم عصرية و حديثة و قابلة للتعديل.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تجربة شراء و تسوق مريحة للعملاء.
+                                  </li>
+                                </ul>
+                                <a href="#" class="learn-more-link"
+                                  >اعرف المزيد
+                                  <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/reports_pic.svg"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="services-reports"
+                        role="tabpanel"
+                        aria-labelledby="services-reports-tab"
+                        tabindex="0"
+                      >
+                        <div class="services-box">
+                          <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                              <div class="content">
+                                <h3 class="title">
+                                  تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                                </h3>
+                                <p class="prag py-4">
+                                  إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح
+                                  لعملائك تصفح وشراء منتجاتك باستخدام طرق دفع
+                                  متنوعة ومختلفة.
+                                </p>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>موقع
+                                    متجاوب مع جميع الاجهزة.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تصاميم عصرية و حديثة و قابلة للتعديل.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تجربة شراء و تسوق مريحة للعملاء.
+                                  </li>
+                                </ul>
+                                <a href="#" class="learn-more-link"
+                                  >اعرف المزيد
+                                  <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/Marketing_pic.svg"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div
+                        class="tab-pane fade"
+                        id="services-marketing"
+                        role="tabpanel"
+                        aria-labelledby="services-marketing-tab"
+                        tabindex="0"
+                      >
+                        <div class="services-box">
+                          <div class="row">
+                            <div class="col-xl-5 col-lg-6">
+                              <div class="content">
+                                <h3 class="title">
+                                  تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                                </h3>
+                                <p class="prag py-4">
+                                  إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح
+                                  لعملائك تصفح وشراء منتجاتك باستخدام طرق دفع
+                                  متنوعة ومختلفة.
+                                </p>
+                                <ul class="list-unstyled">
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>موقع
+                                    متجاوب مع جميع الاجهزة.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تصاميم عصرية و حديثة و قابلة للتعديل.
+                                  </li>
+                                  <li>
+                                    <i class="fa-solid fa-angles-right"></i>
+                                    تجربة شراء و تسوق مريحة للعملاء.
+                                  </li>
+                                </ul>
+                                <a href="#" class="learn-more-link"
+                                  >اعرف المزيد
+                                  <i class="fa-solid fa-chevron-left"></i>
+                                </a>
+                              </div>
+                            </div>
+                            <div class="col-xl-7 col-lg-6">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/sales_img.svg"
+                                  class="img-fluid"
+                                />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="services-box">
+                    <div class="slider-box">
+                      <div
+                        class="swiper services-slider"
+                        dir="rtl"
+                        id="services-slider"
+                      >
+                        <div class="swiper-wrapper">
+                          <div class="swiper-slide">
+                            <div class="title-box">
+                              <img
+                                loading="lazy"
+                                src="/assets/imgs/Sales.svg"
+                                alt="img"
+                                class="img-fluid"
+                              />
+                              مبيعات
+                            </div>
+                            <div class="img-box">
+                              <img
+                                loading="lazy"
+                                src="./assets/imgs/sales_img.svg"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div class="content">
+                              <h3 class="title">
+                                تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                              </h3>
+                              <p class="prag py-4">
+                                إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح لعملائك
+                                تصفح وشراء منتجاتك باستخدام طرق دفع متنوعة
+                                ومختلفة.
+                              </p>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>موقع
+                                  متجاوب مع جميع الاجهزة.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تصاميم عصرية و حديثة و قابلة للتعديل.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تجربة شراء و تسوق مريحة للعملاء.
+                                </li>
+                              </ul>
+                              <a href="#" class="learn-more-link"
+                                >اعرف المزيد
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="title-box">
+                              <img
+                                loading="lazy"
+                                src="/assets/imgs/Manage.svg"
+                                alt="img"
+                                class="img-fluid"
+                              />
+                              يدير
+                            </div>
+                            <div class="img-box">
+                              <img
+                                loading="lazy"
+                                src="./assets/imgs/manage_pic.svg"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div class="content">
+                              <h3 class="title">
+                                تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                              </h3>
+                              <p class="prag py-4">
+                                إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح لعملائك
+                                تصفح وشراء منتجاتك باستخدام طرق دفع متنوعة
+                                ومختلفة.
+                              </p>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>موقع
+                                  متجاوب مع جميع الاجهزة.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تصاميم عصرية و حديثة و قابلة للتعديل.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تجربة شراء و تسوق مريحة للعملاء.
+                                </li>
+                              </ul>
+                              <a href="#" class="learn-more-link"
+                                >اعرف المزيد
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="title-box">
+                              <img
+                                loading="lazy"
+                                src="/assets/imgs/Reports.svg"
+                                alt="img"
+                                class="img-fluid"
+                              />
+                              التقارير
+                            </div>
+                            <div class="img-box">
+                              <img
+                                loading="lazy"
+                                src="./assets/imgs/reports_pic.svg"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div class="content">
+                              <h3 class="title">
+                                تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                              </h3>
+                              <p class="prag py-4">
+                                إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح لعملائك
+                                تصفح وشراء منتجاتك باستخدام طرق دفع متنوعة
+                                ومختلفة.
+                              </p>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>موقع
+                                  متجاوب مع جميع الاجهزة.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تصاميم عصرية و حديثة و قابلة للتعديل.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تجربة شراء و تسوق مريحة للعملاء.
+                                </li>
+                              </ul>
+                              <a href="#" class="learn-more-link"
+                                >اعرف المزيد
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                            </div>
+                          </div>
+                          <div class="swiper-slide">
+                            <div class="title-box">
+                              <img
+                                loading="lazy"
+                                src="/assets/imgs/Marketing.svg"
+                                alt="img"
+                                class="img-fluid"
+                              />
+                              تسويق
+                            </div>
+                            <div class="img-box">
+                              <img
+                                loading="lazy"
+                                src="./assets/imgs/Marketing_pic.svg"
+                                class="img-fluid"
+                              />
+                            </div>
+                            <div class="content">
+                              <h3 class="title">
+                                تخصيص موقع متجاوب مع كل الاجهزة للطلبات
+                              </h3>
+                              <p class="prag py-4">
+                                إطلاق موقع ويب مناسب لجميع الأجهزة، يتيح لعملائك
+                                تصفح وشراء منتجاتك باستخدام طرق دفع متنوعة
+                                ومختلفة.
+                              </p>
+                              <ul class="list-unstyled">
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>موقع
+                                  متجاوب مع جميع الاجهزة.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تصاميم عصرية و حديثة و قابلة للتعديل.
+                                </li>
+                                <li>
+                                  <i class="fa-solid fa-angles-right"></i>
+                                  تجربة شراء و تسوق مريحة للعملاء.
+                                </li>
+                              </ul>
+                              <a href="#" class="learn-more-link"
+                                >اعرف المزيد
+                                <i class="fa-solid fa-chevron-left"></i>
+                              </a>
+                            </div>
+                            >
+                          </div>
+                        </div>
+
+                        <div class="arrow-box">
+                          <div
+                            class="swiper-button-arrow services-swiper-button-prev swiper-button-prev"
+                          >
+                            <i class="fa-solid fa-arrow-left"></i>
+                          </div>
+                          <div
+                            class="swiper-button-arrow services-swiper-button-next swiper-button-next"
+                          >
+                            <i class="fa-solid fa-arrow-right"></i>
+                          </div>
+                        </div>
+
+                        <div
+                          class="swiper-pagination services-swiper-pagination"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="fields-section" id="fields-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="fields-title-box text-center">
+                    <h3 class="title mx-auto">كيو مخصص للعديد من المجالات</h3>
+                    <p class="prag mx-auto">
+                      مهما كان مجال تجارتك، يمكنك الاعتماد علي خدمات كيو في
+                      ادارة كافة الاعمال الخاصة بمتجرك.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-6">
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/restaurants.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">المطاعم</h4>
+                    <p class="prag">
+                      كل ما تحتاجه لادارة اعمال مطعمك و الطلبات اونلاين
+                    </p>
+                  </div>
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/desert.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">متاجر الحلوي</h4>
+                    <p class="prag">
+                      كل ما تحتاجه لادارة متجرك و متابعة الطلبات اونلاين
+                    </p>
+                  </div>
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/stationery.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">الادوات المكتبية</h4>
+                    <p class="prag">
+                      كل ما تحتاجه لادارة اعمال المكتبة الخاصة بك و الطلبات
+                      اونلاين
+                    </p>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-12 col-12 order-lg-0 order-last">
+                  <div class="fields-img-box text-center">
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/mobile.svg"
+                      alt="mobile.svg"
+                      class="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-6">
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/caffe.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">الكافيهات و المقاهي</h4>
+                    <p class="prag">
+                      كل ما تحتاجه لادارة اعمال المقهي الخاص بك و الطلبات
+                      اونلاين
+                    </p>
+                  </div>
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/shop.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">السوبر و الميني ماركت</h4>
+                    <p class="prag">
+                      كل ما تحتاجه لادارة السوبر ماركت و الطلبات اونلاين
+                    </p>
+                  </div>
+                  <div class="fields-box mb-5">
+                    <div class="fields-img">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/other.svg"
+                        alt="fields-img"
+                        class="img-fluid"
+                      />
+                    </div>
+                    <h4 class="title">و العديد من المتاجر الاخري</h4>
+                    <p class="prag">
+                      اين يكن تجارتك او متجر الخاص بك , كيو سيساعدك علي نمو
+                      اعمالك
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="features-section" id="features-section">
+            <div class="container">
+              <div class="row pb-4">
+                <div class="col-md-12">
+                  <div class="tag-item mb-4">
+                    <span class="mx-auto">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/features.svg"
+                        alt="img"
+                      />
+                      <span class="text">مميزاتنا</span>
+                    </span>
+                  </div>
+                  <div class="section-title text-center">
+                    <h2 class="title">اذن, لماذا تختار منصة كيو ؟</h2>
+                    <p class="prag">
+                      نحن نعمل علي كل ما يلزم في توفر وقتك و اموالك
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="features-media">
+                <div class="row pt-4">
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_1.svg"
+                          alt="feature_1"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">تصميم عصري</h4>
+                      <p class="prag">
+                        ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة أينما
+                        كنت.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_2.svg"
+                          alt="feature_1"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">ادوات التسويق</h4>
+                      <p class="prag">
+                        ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة أينما
+                        كنت.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_3.svg"
+                          alt="fet_2"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">فريق للدعم الفني</h4>
+                      <p class="prag">
+                        ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة أينما
+                        كنت.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_4.svg"
+                          alt="fet_2"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">ادارة الطلبات</h4>
+                      <p class="prag">
+                        ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة أينما
+                        كنت.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_5.svg"
+                          alt="fet_2"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">طرق عديدة للدفع</h4>
+                      <p class="prag">
+                        Stay connected with your team and make quick decisions
+                        wherever
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="feature-box">
+                      <div class="feature-img">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/fet_6.svg"
+                          alt="fet_2"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <h4 class="title">بدون عمولة</h4>
+                      <p class="prag">
+                        Stay connected with your team and make quick decisions
+                        wherever
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="features-media-slider">
+                <div class="swiper features-slider" id="features-slider">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_1.svg"
+                            alt="feature_1"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">تصميم عصري</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_2.svg"
+                            alt="feature_1"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">ادوات التسويق</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_3.svg"
+                            alt="fet_2"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">فريق للدعم الفني</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_4.svg"
+                            alt="fet_2"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">ادارة الطلبات</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_5.svg"
+                            alt="fet_2"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">طرق عديدة للدفع</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="feature-box">
+                        <div class="feature-img">
+                          <img
+                            loading="lazy"
+                            src="./assets/imgs/fet_6.svg"
+                            alt="fet_2"
+                            class="img-fluid"
+                          />
+                        </div>
+                        <h4 class="title">بدون عمولة</h4>
+                        <p class="prag">
+                          ابق متصلاً بمتجرك و عملاءك و اتخذ القرارات السريعة
+                          أينما كنت.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="arrow-box">
+                    <div
+                      class="swiper-button-arrow features-swiper-button-prev swiper-button-prev"
+                    >
+                      <i class="fa-solid fa-arrow-left"></i>
+                    </div>
+                    <div
+                      class="swiper-button-arrow features-swiper-button-next swiper-button-next"
+                    >
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+
+                  <div
+                    class="swiper-pagination features-swiper-pagination"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="pricing-section" id="pricing-section">
+            <div class="container">
+              <div class="row pb-4">
+                <div class="col-md-12">
+                  <div class="tag-item mb-4">
+                    <span class="mx-auto">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/pricing.svg"
+                        alt="img"
+                      />
+                      <span class="text">الاسعار</span>
+                    </span>
+                  </div>
+                  <div class="section-title text-center">
+                    <h2 class="title">خطة اسعار متنوعة و مرنة لمتجرك</h2>
+                    <p class="prag mx-auto">
+                      اختر وأدر مجموعتك وفقًا لاحتياجات عملك الفعلية.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="row pt-md-4 pt-0">
+                <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4">
+                  <div class="pricing-box">
+                    <div>
+                      <div
+                        class="pricing-title-box d-flex align-items-center justify-content-between gap-4"
+                      >
+                        <div class="d-flex align-items-center gap-4">
+                          <div class="icon-box">
+                            <img
+                              loading="lazy"
+                              src="./assets/imgs/enterprice.svg"
+                              alt="enterprice.svg"
+                              class="img-fluid"
+                            />
+                          </div>
+                          <h4 class="title">علي ذوقك</h4>
+                        </div>
+                      </div>
+                      <div class="price-box">
+                        <h6 class="price-sub-title opacity-0">ابتداءً من</h6>
+                        <h6 class="price-title">تواصل معنا</h6>
+                      </div>
+                      <div class="price-features">
+                        <h5 class="price-features-title">تشمل علي :</h5>
+                        <ul class="list-unstyled features-list">
+                          <li>
+                            <i class="fa-solid fa-check"></i>عقد وتسعير مخصص
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i> دعم الأولوية
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>مدير حساب مخصص
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="price-link"> تحدث الي المبيعات</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4">
+                  <div class="pricing-box dark-card">
+                    <div>
+                      <div
+                        class="pricing-title-box d-flex align-items-center justify-content-between gap-4 flex-wrap"
+                      >
+                        <div class="d-flex align-items-center gap-4">
+                          <div class="icon-box">
+                            <img
+                              loading="lazy"
+                              src="./assets/imgs/starter_icon.svg"
+                              alt="enterprice.svg"
+                              class="img-fluid"
+                            />
+                          </div>
+                          <h4 class="title">الاساسية</h4>
+                        </div>
+                        <div class="tag">الأكثر طلبا</div>
+                      </div>
+                      <div class="price-box">
+                        <h6 class="price-sub-title">ابتداءً من</h6>
+                        <h6 class="price-title">
+                          دينار 175 <span>/ بالسنة</span>
+                        </h6>
+                      </div>
+                      <div class="price-features">
+                        <h5 class="price-features-title">تشمل علي :</h5>
+                        <ul class="list-unstyled features-list">
+                          <li><i class="fa-solid fa-check"></i> 1 فرع</li>
+                          <li><i class="fa-solid fa-check"></i> 1 مستخدم</li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>إدارة الطلبات
+                          </li>
+                          <li><i class="fa-solid fa-check"></i> الإبلاغ</li>
+                        </ul>
+                        <h5 class="price-features-title">الوظائف الإضافية:</h5>
+                        <ul class="list-unstyled features-list">
+                          <li>
+                            <i class="fa-solid fa-check"></i>فرع إضافي - 5 دينار
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>مستخدم إضافي - 5
+                            كيلو دالتون
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i> 50 عناصر إضافية -
+                            5 دينار
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="price-link"> تحدث الي المبيعات</a>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4">
+                  <div class="pricing-box">
+                    <div>
+                      <div
+                        class="pricing-title-box d-flex align-items-center justify-content-between gap-4"
+                      >
+                        <div class="d-flex align-items-center gap-4">
+                          <div class="icon-box">
+                            <img
+                              loading="lazy"
+                              src="./assets/imgs/queue_pro.svg"
+                              alt="enterprice.svg"
+                              class="img-fluid"
+                            />
+                          </div>
+                          <h4 class="title">كيو برو</h4>
+                        </div>
+                      </div>
+                      <div class="price-box">
+                        <h6 class="price-sub-title opacity-0">ابتداءً من</h6>
+                        <h6 class="price-title">
+                          دينار 257 <span>/ بالسنة</span>
+                        </h6>
+                      </div>
+                      <div class="price-features">
+                        <h5 class="price-features-title">
+                          جميع مميزات الاساسية +
+                        </h5>
+                        <ul class="list-unstyled features-list">
+                          <li>
+                            <i class="fa-solid fa-check"></i>التقارير المحترفين
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>التسويق المحترف
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>دعم المحترفين
+                          </li>
+                        </ul>
+                        <h5 class="price-features-title">ADD-ONS :</h5>
+                        <ul class="list-unstyled features-list">
+                          <li>
+                            <i class="fa-solid fa-check"></i>فرع إضافي – 5 دينار
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>مستخدم إضافي - 5
+                            دينار
+                          </li>
+                          <li>
+                            <i class="fa-solid fa-check"></i>50 عنصرًا إضافيًا –
+                            5 دينار
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="price-link"> تحدث الي المبيعات</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-section" id="testimonial-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tag-item mb-4">
+                    <span class="mx-auto">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/testimonial.svg"
+                        alt="img"
+                      />
+                      <span class="text">شهادة</span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="swiper-content">
+                    <div class="swiper" id="testimonial-slider">
+                      <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <h5 class="text">
+                              لوحة تحكم كيو انصح بها كل صاحب مطعم اخر, كما اني
+                              سعيد بخدمات ما بعد البيع الخاصة بكيو خاصة الدعم
+                              الفني الخاص بهم
+                            </h5>
+
+                            <div class="content-name">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/Ellipse 1.png"
+                                  alt="img"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="content-text">
+                                <h5 class="name">سليمان القاسم</h5>
+                                <h6 class="jop">
+                                  مالك و المدير التنفيذي لمطعم توينز
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <h5 class="text">
+                              لوحة تحكم كيو انصح بها كل صاحب مطعم اخر, كما اني
+                              سعيد بخدمات ما بعد البيع الخاصة بكيو خاصة الدعم
+                              الفني الخاص بهم
+                            </h5>
+
+                            <div class="content-name">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/Ellipse 1.png"
+                                  alt="img"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="content-text">
+                                <h5 class="name">سليمان القاسم</h5>
+                                <h6 class="jop">
+                                  مالك و المدير التنفيذي لمطعم توينز
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="swiper-slide">
+                          <div class="testimonial-content">
+                            <h5 class="text">
+                              لوحة تحكم كيو انصح بها كل صاحب مطعم اخر, كما اني
+                              سعيد بخدمات ما بعد البيع الخاصة بكيو خاصة الدعم
+                              الفني الخاص بهم
+                            </h5>
+
+                            <div class="content-name">
+                              <div class="img-box">
+                                <img
+                                  loading="lazy"
+                                  src="./assets/imgs/Ellipse 1.png"
+                                  alt="img"
+                                  class="img-fluid"
+                                />
+                              </div>
+                              <div class="content-text">
+                                <h5 class="name">سليمان القاسم</h5>
+                                <h6 class="jop">
+                                  مالك و المدير التنفيذي لمطعم توينز
+                                </h6>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="arrow-box">
+                        <div
+                          class="swiper-button-arrow testimonial-swiper-button-prev swiper-button-prev"
+                        >
+                          <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div
+                          class="swiper-button-arrow testimonial-swiper-button-next swiper-button-next"
+                        >
+                          <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                      </div>
+
+                      <div
+                        class="swiper-pagination testimonial-swiper-pagination"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slider main container -->
+          </div>
+
+          <div class="blog-section" id="blog-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="blog-title">
+                    <div class="title-box">
+                      <h2 class="title mb-4">قصص نجاح العملاء</h2>
+                      <p class="prag">
+                        تعرف على قصص نجاح عملائنا وتجربتهم مع كيو.
+                      </p>
+                    </div>
+                    <a href="#" class="blog-link web-button">عرض المزيد </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="blog-box">
+                    <div class="img-box">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                      <div class="title-box">
+                        <h4 class="name">Ahmed Khalifa</h4>
+                        <h6 class="jop">Mcdonald’s Kuwait CEO</h6>
+                        <span class="back-color"></span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h5 class="date">مهند طارق • 20 يناير 2023</h5>
+                      <h4 class="title">
+                        <a href="#">
+                          أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                          من جودة التحكم و ادارة الطلبات ... ...
+                        </a>
+                      </h4>
+                      <p class="prag">
+                        أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                        من جودة التحكم و ادارة الطلبات ...
+                      </p>
+                      <div class="tags-box d-flex gap-2 flex-warp">
+                        <div class="tag">تسويق المطاعم</div>
+                        <div class="tag">تسويق المطاعم</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="blog-box">
+                    <div class="img-box">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                      <div class="title-box">
+                        <h4 class="name">Ahmed Khalifa</h4>
+                        <h6 class="jop">Mcdonald’s Kuwait CEO</h6>
+                        <span class="back-color"></span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h5 class="date">مهند طارق • 20 يناير 2023</h5>
+                      <h4 class="title">
+                        <a href="#">
+                          أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                          من جودة التحكم و ادارة الطلبات ... ...
+                        </a>
+                      </h4>
+                      <p class="prag">
+                        أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                        من جودة التحكم و ادارة الطلبات ...
+                      </p>
+                      <div class="tags-box d-flex gap-2 flex-warp">
+                        <div class="tag">تسويق المطاعم</div>
+                        <div class="tag">تسويق المطاعم</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12 mb-4">
+                  <div class="blog-box">
+                    <div class="img-box">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/360_F_243123463_zTooub557xEWABDLk0jJklDyLSGl2jrr.jpg"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                      <div class="title-box">
+                        <h4 class="name">Ahmed Khalifa</h4>
+                        <h6 class="jop">Mcdonald’s Kuwait CEO</h6>
+                        <span class="back-color"></span>
+                      </div>
+                    </div>
+                    <div class="content">
+                      <h5 class="date">مهند طارق • 20 يناير 2023</h5>
+                      <h4 class="title">
+                        <a href="#">
+                          أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                          من جودة التحكم و ادارة الطلبات ... ...
+                        </a>
+                      </h4>
+                      <p class="prag">
+                        أحمد خليفة يتحدث عن أهمية التسويق الإلكتروني في اتسحين
+                        من جودة التحكم و ادارة الطلبات ...
+                      </p>
+                      <div class="tags-box d-flex gap-2 flex-warp">
+                        <div class="tag">تسويق المطاعم</div>
+                        <div class="tag">تسويق المطاعم</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <a href="#" class="blog-link text-center mobile-button"
+                    >عرض المزيد
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="faq-section" id="faq-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="tag-item mb-4">
+                    <span class="mx-auto">
+                      <img
+                        loading="lazy"
+                        src="./assets/imgs/faq.svg"
+                        alt="img"
+                      />
+                      <span class="text">الاسئلة الشائعة</span>
+                    </span>
+                  </div>
+                  <div class="section-title text-center">
+                    <h2 class="title">ما هي الاسئلة الشائعة</h2>
+                    <p class="prag mx-auto">
+                      يمكن العثور على الأسئلة الأكثر شيوعًا هنا ، واستكشف المزيد
+                      من الأسئلة إذا كان هناك المزيد.
+                    </p>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div
+                    class="accordion accordion-box"
+                    id="accordionPanelsStayOpenExample"
+                  >
+                    <div class="accordion-item my-5">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseOne"
+                          aria-expanded="true"
+                          aria-controls="panelsStayOpen-collapseOne"
+                        >
+                          هل كيو تطبيق ؟
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseOne"
+                        class="accordion-collapse collapse show"
+                      >
+                        <div class="accordion-body">
+                          <strong
+                            >هذا هو هيئة الأكورديون في العنصر الأول.</strong
+                          >
+                          يظهر بشكل افتراضي ، حتى يضيف المكون الإضافي للانهيار
+                          الفصول المناسبة التي نستخدمها لتنظيم كل منها عنصر.هذه
+                          الفئات تتحكم في المظهر العام ، وكذلك العرض والاختباء
+                          عبر انتقالات CSS. يمكنك تعديل أي من هذا مع CSS مخصصة
+                          أو تجاوز متغيراتنا الافتراضية.إنه يستحق أيضًا مع
+                          ملاحظة أن أي HTML يمكن أن يذهب داخل
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-5">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseTwo"
+                        >
+                          ماهيالدولالتيتتوفرفيهاقائمةالانتظار؟
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseTwo"
+                        class="accordion-collapse collapse"
+                      >
+                        <div class="accordion-body">
+                          يظهر بشكل افتراضي ، حتى يضيف المكون الإضافي للانهيار
+                          الفصول المناسبة التي نستخدمها لتنظيم كل منها عنصر.هذه
+                          الفئات تتحكم في المظهر العام ، وكذلك العرض والاختباء
+                          عبر انتقالات CSS. يمكنك تعديل أي من هذا مع CSS مخصصة
+                          أو تجاوز متغيراتنا الافتراضية.إنه يستحق أيضًا مع
+                          ملاحظة أن أي HTML يمكن أن يذهب داخل
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-5">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseThree"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseThree"
+                        >
+                          هل قائمة الانتظار مناسبة للشركات الصغيرة؟
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseThree"
+                        class="accordion-collapse collapse"
+                      >
+                        <div class="accordion-body">
+                          يظهر بشكل افتراضي ، حتى يضيف المكون الإضافي للانهيار
+                          الفصول المناسبة التي نستخدمها لتنظيم كل منها عنصر.هذه
+                          الفئات تتحكم في المظهر العام ، وكذلك العرض والاختباء
+                          عبر انتقالات CSS. يمكنك تعديل أي من هذا مع CSS مخصصة
+                          أو تجاوز متغيراتنا الافتراضية.إنه يستحق أيضًا مع
+                          ملاحظة أن أي HTML يمكن أن يذهب داخل
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-5">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFour"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFour"
+                        >
+                          كم من الوقت تقدم الدعم؟
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseFour"
+                        class="accordion-collapse collapse"
+                      >
+                        <div class="accordion-body">
+                          يظهر بشكل افتراضي ، حتى يضيف المكون الإضافي للانهيار
+                          الفصول المناسبة التي نستخدمها لتنظيم كل منها عنصر.هذه
+                          الفئات تتحكم في المظهر العام ، وكذلك العرض والاختباء
+                          عبر انتقالات CSS. يمكنك تعديل أي من هذا مع CSS مخصصة
+                          أو تجاوز متغيراتنا الافتراضية.إنه يستحق أيضًا مع
+                          ملاحظة أن أي HTML يمكن أن يذهب داخل
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item mb-5">
+                      <h2 class="accordion-header">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#panelsStayOpen-collapseFive"
+                          aria-expanded="false"
+                          aria-controls="panelsStayOpen-collapseFive"
+                        >
+                          هل يمكنني تجربته قبل الاشتراك والدفع؟
+                        </button>
+                      </h2>
+                      <div
+                        id="panelsStayOpen-collapseFive"
+                        class="accordion-collapse collapse"
+                      >
+                        <div class="accordion-body">
+                          يظهر بشكل افتراضي ، حتى يضيف المكون الإضافي للانهيار
+                          الفصول المناسبة التي نستخدمها لتنظيم كل منها عنصر.هذه
+                          الفئات تتحكم في المظهر العام ، وكذلك العرض والاختباء
+                          عبر انتقالات CSS. يمكنك تعديل أي من هذا مع CSS مخصصة
+                          أو تجاوز متغيراتنا الافتراضية.إنه يستحق أيضًا مع
+                          ملاحظة أن أي HTML يمكن أن يذهب داخل
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="button-box">
+                    <div
+                      class="qu-button-box d-flex gap-4 justify-content-center"
+                    >
+                      <a href="#" class="qu-button qu-button-border">
+                        عرض المزيد
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="ready-section" id="ready-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="section-title text-center">
+                    <div class="content">
+                      <h2 class="title">جاهز تبدأ معانا ؟</h2>
+                      <p class="prag mx-auto">
+                        خلينا نتقابل و نوضحلك كيفية يمكننا زيادة ربحك و عملك
+                      </p>
+                      <div
+                        class="qu-button-box mt-5 qu-button-box-sm d-flex gap-4 justify-content-center"
+                      >
+                        <a href="#" class="qu-button"> تحدث مع المبيعات </a>
+                        <a href="#" class="qu-button qu-button-border">
+                          حجز نسخة مجانية
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="img-box text-center">
+                    <img
+                      loading="lazy"
+                      src="./assets/imgs/lap.png"
+                      alt="lap.png"
+                      class="img-fluid w-100"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </main>
       </div>
       <!--           end content-->
       <!--           start footer-->
       <div class="footer-container">
-        <footer class="wrapper"></footer>
+        <footer class="wrapper">
+          <div class="footer-section">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-6">
+                  <h2 class="footer-title pb-4">
+                    اشترك في النشرة الإخبارية للبقاء على اتصال بنا.
+                  </h2>
+                </div>
+                <div class="col-md-6">
+                  <div class="subscribe-box">
+                    <h3 class="title pb-4">
+                      قم بالتسجيل لتلقي التحديثات وإصدارات الميزات على بريدك
+                      الإلكتروني.
+                    </h3>
+                    <form>
+                      <input
+                        type="text"
+                        placeholder="البريد الإلكتروني الخاص بك"
+                      />
+                      <button>اشترك الان</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="footer-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="content">
+                      <div class="logo-box">
+                        <img
+                          loading="lazy"
+                          src="./assets/imgs/logo_white.svg"
+                          alt="logo_white.svg"
+                          class="img-fluid"
+                        />
+                      </div>
+                      <div class="links-box">
+                        <ul class="list-unstyled">
+                          <li>
+                            <a href="#"> خدمات </a>
+                          </li>
+                          <li>
+                            <a href="#"> سمات </a>
+                          </li>
+                          <li>
+                            <a href="#"> التسعير </a>
+                          </li>
+                          <li>
+                            <a href="#"> البطن </a>
+                          </li>
+                          <li>
+                            <a href="#"> دراسة الحالات </a>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="social-links">
+                        <a href="#"> <i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i> </a>
+                        <a href="#"><i class="fa-brands fa-twitter"></i> </a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i> </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="copy-right">
+                      <p class="prag text">
+                        &copy;2023 قائمة الانتظار.كل الحق محجوز
+                      </p>
+                      <ul>
+                        <li>
+                          <a href="#" class="text">سياسة الخصوصية</a>
+                        </li>
+                        <li>
+                          <a href="#" class="text">شروط الخدمة</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </footer>
       </div>
       <!--           end footer-->
-      <div class="overlay"></div>
+      <div class="chat-box">
+        <div class="chat-head d-flex flex-column align-items-end">
+          <div class="start-message">
+            <span class="text"> كيف يمكنني مساعدك؟ </span>
+            <span id="remove-chat-message">
+              <i class="fa fa-times"></i>
+            </span>
+          </div>
+          <div class="chat-container d-none">
+            <div class="chat-container-header">
+              <img
+                src="./assets/imgs/chat_header_img.svg"
+                loading="lazy"
+                alt=""
+              />
+              <span id="close-chat-message">
+                <i class="fa fa-times"></i>
+              </span>
+            </div>
+            <div
+              class="chat-container-content bg-white p-4 d-flex align-items-start gap-3"
+            >
+              <img
+                src="/assets/imgs/chat_logo.svg"
+                class="img-fluid"
+                loading="lazy"
+                alt="logo"
+              />
+              <div class="list">
+                <div class="message mb-3">
+                  مرحبًا 👋 ، أنا مساعد في قائمة الانتظار.
+                </div>
+                <div class="message mb-3">كيف يمكنني مساعدتك اليوم؟</div>
+                <div class="suggest mb-3">تعلم عن قائمة الانتظار؟</div>
+                <div class="suggest mb-3">تعلم عن التسعير؟</div>
+                <div class="suggest mb-3">تريد حجز العرض التوضيحي؟</div>
+              </div>
+            </div>
+            <div class="chat-container-input bg-white">
+              <input
+                type="text"
+                id="chat-input"
+                class="bg-transparent border-0 w-100"
+                placeholder="Ask bot anything..."
+              />
+              <button id="send-chat-message" class="bg-transparent border-0">
+                <img
+                  src="./assets/imgs/send.svg"
+                  loading="lazy"
+                  alt="send"
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="chat-icon" id="open-chat-img">
+            <img
+              src="./assets/imgs/chat_icon.svg"
+              loading="lazy"
+              alt="chat"
+              class="img-fluid"
+            />
+          </div>
+          <div class="chat-icon d-none" id="close-chat-img">
+            <img
+              src="./assets/imgs/arrow_down.svg"
+              loading="lazy"
+              alt="chat"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./assets/js/plugin/bootstrap.min.js"></script>
     <script src="./assets/js/plugin/all.min.js"></script>
+    <script src="./assets/js/plugin/swiper.js"></script>
     <script src="assets/js/script.js"></script>
   </body>
 </html>

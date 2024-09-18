@@ -2,9 +2,12 @@
   padding: 11px 30px;
   font-weight: 500;
   font-size: 18px;
-  border-radius: 50px;
+  @extend%round-content;
   &.qu-button-box-sm {
     padding: 8px 20px;
+    font-size: 16px;
+  }
+  @include media(772) {
     font-size: 16px;
   }
   @extend %cursors-item;

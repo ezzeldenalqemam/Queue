@@ -1,124 +1,132 @@
-.header-section {
-  padding: 21px 0;
+.header-container {
+  position: sticky;
+  top: 0px;
   z-index: 9999999;
-  .nav-box {
-    ul {
-      display: flex;
-      align-items: center;
-      gap: 45px;
-      @include media(1200) {
-        gap: 24px;
+  background: #ffffffd4;
+  backdrop-filter: blur(2px);
+  .header-section {
+    padding: 21px 0;
+
+    z-index: 100;
+    .nav-box {
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 45px;
+        @include media(1200) {
+          gap: 24px;
+        }
+        @include media(992) {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        li {
+          a {
+            color: $color_dark;
+            font-size: 16px;
+            font-weight: 500;
+            @extend%cursors-item;
+            @include hover {
+              color: $color_primary;
+            }
+            @include media(1200) {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+      .button-box {
+        display: none;
       }
       @include media(992) {
+        position: absolute;
+        right: 0;
+        left: 0;
+        background-color: $color_white;
+        top: 70px;
+        border-top: 1px solid $color_gray_light;
+        padding: 24px;
+        display: flex;
+        justify-content: space-between;
         flex-direction: column;
-        align-items: flex-start;
+        height: 93vh;
+        z-index: 9999999;
+        opacity: 0;
+        visibility: hidden;
+        @include trans(0.2);
+        &.show-nav {
+          opacity: 1;
+          visibility: visible;
+        }
+        .button-box {
+          display: block;
+          .button-header {
+            display: block;
+            text-align: center;
+          }
+        }
       }
-      li {
-        a {
+    }
+
+    .menu-box {
+      .lang-item {
+        border: 0;
+        background-color: transparent;
+        &:focus {
+          border: 0;
+          outline: none;
+        }
+      }
+      .menu-icon {
+        display: none;
+        @include media(992) {
+          display: block;
+        }
+        svg {
           color: $color_dark;
           font-size: 16px;
-          font-weight: 500;
-          @extend%cursors-item;
-          @include hover {
-            color: $color_primary;
-          }
-          @include media(1200) {
-            font-size: 14px;
-          }
+          cursor: pointer;
         }
       }
     }
     .button-box {
-      display: none;
-    }
-    @include media(992) {
-      position: absolute;
-      right: 0;
-      left: 0;
-      background-color: $color_white;
-      top: 70px;
-      border-top: 1px solid $color_gray_light;
-      padding: 24px;
       display: flex;
-      justify-content: space-between;
-      flex-direction: column;
-      height: 92%;
-      z-index: 9999999;
-      opacity: 0;
-      visibility: hidden;
-      @include trans(0.2);
-      &.show-nav {
-        opacity: 1;
-        visibility: visible;
-      }
-      .button-box {
-        display: block;
-        .button-header {
-          display: block;
-          text-align: center;
-        }
-      }
-    }
-  }
+      align-items: center;
+      gap: 16px;
 
-  .menu-box {
-    .lang-item {
-      border: 0;
-
-      &:focus {
-        border: 0;
-        outline: none;
-      }
-    }
-    .menu-icon {
-      display: none;
-      @include media(992) {
-        display: block;
-      }
-      svg {
-        color: $color_dark;
-        font-size: 16px;
-        cursor: pointer;
-      }
-    }
-  }
-  .button-box {
-    display: flex;
-    align-items: center;
-    gap: 16px;
-
-    .button-header {
-      padding: 8px 16px;
-      font-weight: 400;
-      font-size: 14px;
-      border-radius: 50px;
-      @extend %cursors-item;
-      &:not(.button-header-border) {
-        border: 1px solid $color_primary;
-        background-color: $color_primary;
-        color: $color_white;
-        @include hover {
-          background-color: $color_white;
-          color: $color_primary;
-        }
-      }
-      &:is(.button-header-border) {
-        color: $color_dark;
-        border: 1px solid $color_dark;
-        @include hover {
-          color: $color_white;
-          background-color: $color_dark;
-        }
-      }
-
-      @include media(1200) {
-        padding: 8px 10px;
-        font-size: 12px;
-      }
-      @include media(992) {
+      .button-header {
         padding: 8px 16px;
+        font-weight: 400;
         font-size: 14px;
-        display: none;
+        @extend%round-content;
+        @extend %cursors-item;
+        &:not(.button-header-border) {
+          border: 1px solid $color_primary;
+          background-color: $color_primary;
+          color: $color_white;
+          @include hover {
+            background-color: $color_white;
+            color: $color_primary;
+          }
+        }
+        &:is(.button-header-border) {
+          color: $color_dark;
+          border: 1px solid $color_dark;
+          @include hover {
+            color: $color_white;
+            background-color: $color_dark;
+          }
+        }
+
+        @include media(1200) {
+          padding: 8px 10px;
+          font-size: 12px;
+        }
+        @include media(992) {
+          padding: 8px 16px;
+          font-size: 14px;
+          display: none;
+        }
       }
     }
   }

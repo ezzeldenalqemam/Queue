@@ -84,6 +84,9 @@
 
 .services-section {
   padding: 100px 0 0;
+  @include media(772) {
+    padding: 40px 0 0;
+  }
   .tabs-box {
     padding: 60px 0 0;
     @include media(992) {
@@ -92,7 +95,7 @@
     .tab-items {
       width: 100%;
       padding: 10px;
-      border-radius: 50px;
+      @extend%round-content;
       background: #f5f7fa;
       justify-content: space-between;
       margin-bottom: 60px;
@@ -105,7 +108,7 @@
           align-items: center;
           gap: 10px;
           padding: 12px 65px;
-          border-radius: 50px;
+          @extend%round-content;
           background-color: transparent;
           font-size: 20.89px;
           font-weight: 400;
@@ -206,7 +209,7 @@
       .arrow-box {
         background-color: $color_white;
         position: absolute;
-        top: 35px;
+        top: 6px;
         @include dir(ltr) {
           right: 5px;
         }
@@ -248,6 +251,9 @@
 
 .fields-section {
   padding: 117px 0 80px;
+  @include media(772) {
+    padding: 40px 0;
+  }
   .fields-title-box {
     padding-bottom: 100px;
     .title {
@@ -263,12 +269,9 @@
         top: -24px;
         width: 62.1px;
         height: 57px;
-        @include dir(rtl) {
-          left: -48px;
-        }
-        @include dir(ltr) {
-          right: -48px;
-        }
+
+        right: -48px;
+
         @include media(772) {
           display: none;
         }
@@ -278,12 +281,9 @@
         top: -41px;
         width: 56px;
         height: 66px;
-        @include dir(rtl) {
-          right: -80px;
-        }
-        @include dir(ltr) {
-          left: -80px;
-        }
+
+        left: -80px;
+
         @include media(772) {
           display: none;
         }
@@ -363,6 +363,9 @@
 .features-section {
   padding: 109px 0;
   background-color: rgba($color_primary_2, 0.33);
+  @include media(772) {
+    padding: 40px 0;
+  }
   .features-media {
     display: block;
     @include media(772) {
@@ -379,6 +382,9 @@
     text-align: center;
     padding: 36px 11px;
     border-radius: 8px;
+    @include media(772) {
+      padding: 20px 10px;
+    }
     @include hover {
       box-shadow: 0px 40px 70px 0px #4abb821f;
       background-color: $color_primary;
@@ -418,6 +424,9 @@
 
 .pricing-section {
   padding: 100px 0 0;
+  @include media(772) {
+    padding: 40px 0 0;
+  }
   @include after {
     background-image: url("../imgs/line_back.svg");
     background-repeat: no-repeat;
@@ -439,9 +448,6 @@
     background-color: rgba($color_white, 1);
     @include media(772) {
       min-height: 583px;
-    }
-    @include media(992) {
-      margin-top: 24px;
     }
 
     &.dark-card {
@@ -492,12 +498,22 @@
         place-content: center;
         border-radius: 50%;
         background: #eef0f380;
+        @include media(772) {
+          width: 44px;
+          height: 44px;
+          img {
+            height: 30px;
+          }
+        }
       }
       .title {
         color: $color_dark;
         font-size: 24px;
         font-weight: 500;
         line-height: 30px;
+        @include media(772) {
+          font-size: 19px;
+        }
       }
     }
     .price-box {
@@ -523,6 +539,10 @@
       border-radius: 25px;
       font-size: 12px;
       font-weight: 400;
+      @include media(772) {
+        font-size: 10px;
+        padding: 2px;
+      }
     }
     .price-features {
       padding: 20px 0;
@@ -554,7 +574,7 @@
     font-weight: 500;
     display: block;
     text-align: center;
-    border-radius: 50px;
+    @extend%round-content;
     padding: 10px;
     border: 1px solid #d5dae1;
     color: $color_dark;
@@ -572,7 +592,7 @@
     font-size: 16px;
     font-weight: 500;
     padding: 16px 24px;
-    border-radius: 50px;
+    @extend%round-content;
     border: 1.5px solid #d5dae1;
     @include hover {
       color: $color_white;
@@ -583,6 +603,7 @@
     }
     &.mobile-button {
       display: none;
+      padding: 10px 24px;
     }
     @include media(772) {
       &.web-button {
@@ -596,9 +617,7 @@
   .blog-title {
     padding: 60px 0;
     border-top: 1px solid #d5dae1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    @extend%between-flex;
     gap: 24px;
     flex-wrap: wrap;
     @include media(772) {
@@ -638,14 +657,16 @@
         z-index: 100000;
         position: absolute !important;
         top: 50%;
+        transform: translateY(-50%);
         text-align: center;
         z-index: 9999;
         padding: 14px 40px;
+        right: 10px;
         .back-color {
           background-color: rgba($color_dark, 1);
           position: absolute;
           inset: 0;
-          border-radius: 50px;
+          @extend%round-content;
           z-index: 1;
           box-shadow: $color_primary 0px 25px 0px -20px;
         }
@@ -657,12 +678,8 @@
           height: 71px;
           z-index: 2;
           transform: translateY(-50%);
-          @include dir(rtl) {
-            left: -11px;
-          }
-          @include dir(ltr) {
-            right: -11px;
-          }
+
+          right: -11px;
         }
         @include before {
           background-image: url("../imgs/2Clip path group.svg");
@@ -672,19 +689,10 @@
           background-repeat: no-repeat;
           height: 80px;
           transform: translateY(-50%);
-          @include dir(rtl) {
-            left: -11px;
-          }
-          @include dir(ltr) {
-            right: -11px;
-          }
+
+          right: -11px;
         }
-        @include dir(rtl) {
-          left: 10px;
-        }
-        @include dir(ltr) {
-          right: 10px;
-        }
+
         .name {
           color: rgba($color_white, 1);
           font-size: 16px;
@@ -708,13 +716,10 @@
         height: 99px;
         background-repeat: no-repeat;
         z-index: 100;
-        @include dir(rtl) {
-          right: 0;
-        }
-        @include dir(ltr) {
-          left: 0;
-        }
+
+        left: 0;
       }
+
       @include after {
         z-index: -1;
         background: linear-gradient(
@@ -751,6 +756,7 @@
         font-size: 24px;
         font-weight: 600;
         padding: 12px 0;
+
         a {
           color: $color_dark;
           @include hover {
@@ -770,8 +776,18 @@
           font-size: 14px;
           font-weight: 400;
           background: #f3f4f5;
-          border-radius: 50px;
+          @extend%round-content;
           padding: 2px 10px;
+        }
+      }
+
+      @include media(772) {
+        .title {
+          font-size: 22px;
+        }
+        .prag {
+          line-height: 22.99px;
+          font-size: 14px;
         }
       }
     }
@@ -783,6 +799,9 @@
   .swiper-content {
     .swiper-slide {
       padding-bottom: 40px;
+      @include media(772) {
+        padding-bottom: 10px;
+      }
       &.swiper-slide-prev,
       &.swiper-slide-next {
         .testimonial-content {
@@ -893,6 +912,16 @@
   margin-top: 100px;
   background-color: rgba($color_primary_2, 0.33);
   padding: 100px 0;
+  @include media(772) {
+    margin-top: 40px;
+    padding: 40px 0;
+    .qu-button-box {
+      a {
+        width: 100%;
+        text-align: center;
+      }
+    }
+  }
   .accordion-box {
     padding-top: 45px;
     .accordion-item {
@@ -937,6 +966,9 @@
 
 .ready-section {
   padding-top: 100px;
+  @include media(772) {
+    padding-top: 40px;
+  }
   .section-title {
     display: flex;
     justify-content: center;
@@ -975,6 +1007,8 @@
         background-repeat: no-repeat;
         background-size: cover;
         transform: rotate(8deg);
+        left: -109px;
+
         @include media(990) {
           top: 35px;
           width: 113.48px;
@@ -986,15 +1020,6 @@
         @include media(772) {
           display: none;
         }
-        @include dir(rtl) {
-          right: -109px;
-        }
-        @include dir(ltr) {
-          left: -109px;
-        }
-      }
-      .qu-button-box {
-        // flex-wrap: wrap;
       }
     }
     .prag {

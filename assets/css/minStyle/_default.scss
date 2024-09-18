@@ -29,3 +29,9 @@ body {
   // @include dir(ltr) {
   // }
 }
+input {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}

@@ -1,10 +1,12 @@
-const page_dir = document.querySelector("html").getAttribute("dir");
+function navigatePage() {
+  const selectElement = document.getElementById("pageSelect");
+  const selectedPage = selectElement.value;
 
-if (page_dir == "rtl") {
-  var dir_lang = true;
-} else {
-  var dir_lang = false;
+  if (selectedPage) {
+    window.location.href = selectedPage;
+  }
 }
+
 const openMenu = document.getElementById("open-menu");
 const closeMenu = document.getElementById("close-menu");
 openMenu.onclick = function () {
@@ -62,3 +64,28 @@ const swiper_features = new Swiper("#features-slider", {
     prevEl: ".features-swiper-button-prev",
   },
 });
+const openChat = document.getElementById("open-chat-img");
+const closeChat = document.getElementById("close-chat-img");
+const closeChatIcon = document.getElementById("close-chat-message");
+const removeChatMessage = document.getElementById("remove-chat-message");
+
+closeChat.addEventListener("click", closeChatHandler);
+closeChatIcon.addEventListener("click", closeChatHandler);
+
+openChat.onclick = function () {
+  document.querySelector(".chat-box .start-message").classList.add("d-none");
+  document
+    .querySelector(".chat-box .chat-container")
+    .classList.remove("d-none");
+  closeChat.classList.remove("d-none");
+  openChat.classList.add("d-none");
+};
+removeChatMessage.onclick = function () {
+  document.querySelector(".chat-box .start-message").classList.add("d-none");
+};
+
+function closeChatHandler() {
+  document.querySelector(".chat-box .chat-container").classList.add("d-none");
+  closeChat.classList.add("d-none");
+  openChat.classList.remove("d-none");
+}

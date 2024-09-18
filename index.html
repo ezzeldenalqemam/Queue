@@ -31,7 +31,7 @@
         <header class="wrapper">
           <div class="header-section">
             <div class="container">
-              <div class="row align-items-center">
+              <div class="row justify-content-between align-items-center">
                 <div class="col-lg-2 col-md-5 col-5">
                   <div class="logo-box">
                     <a href="#">
@@ -48,19 +48,19 @@
                   <div class="nav-box">
                     <ul class="list-unstyled">
                       <li>
-                        <a href="#"> Services </a>
+                        <a href="#services-section"> Services </a>
                       </li>
                       <li>
-                        <a href="#"> Features </a>
+                        <a href="#fields-section"> Features </a>
                       </li>
                       <li>
-                        <a href="#"> Pricing </a>
+                        <a href="#pricing-section"> Pricing </a>
                       </li>
                       <li>
-                        <a href="#"> Bolg </a>
+                        <a href="#blog-section"> Bolg </a>
                       </li>
                       <li>
-                        <a href="#"> Cases Study </a>
+                        <a href="#faq-section"> Cases Study </a>
                       </li>
                     </ul>
                     <div class="button-box">
@@ -71,14 +71,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-lg-4 col-md-6 col-6">
+                <div class="col-lg-4 col-md-6 col-4">
                   <div
                     class="items-box d-flex align-items-center justify-content-end gap-4"
                   >
                     <div class="menu-box d-flex align-items-center gap-4">
-                      <select class="lang-item">
-                        <option value="en" selected>En</option>
-                        <option value="ar">Ar</option>
+                      <select
+                        class="lang-item"
+                        id="pageSelect"
+                        onchange="navigatePage()"
+                      >
+                        <option value="index.html" selected>En</option>
+                        <option value="index-ar.html">Ar</option>
                       </select>
                       <div class="menu-icon" id="open-menu">
                         <i class="fa-solid fa-bars"></i>
@@ -155,7 +159,7 @@
             </div>
           </div>
 
-          <div class="trusted-section">
+          <div class="trusted-section" id="trusted-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -232,7 +236,7 @@
             </div>
           </div>
 
-          <div class="services-section">
+          <div class="services-section" id="services-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -844,7 +848,7 @@
             </div>
           </div>
 
-          <div class="fields-section">
+          <div class="fields-section" id="fields-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -960,7 +964,7 @@
             </div>
           </div>
 
-          <div class="features-section">
+          <div class="features-section" id="features-section">
             <div class="container">
               <div class="row pb-4">
                 <div class="col-md-12">
@@ -1217,7 +1221,7 @@
             </div>
           </div>
 
-          <div class="pricing-section">
+          <div class="pricing-section" id="pricing-section">
             <div class="container">
               <div class="row pb-4">
                 <div class="col-md-12">
@@ -1242,12 +1246,12 @@
                   </div>
                 </div>
               </div>
-              <div class="row pt-4">
+              <div class="row pt-md-4 pt-0">
                 <div class="col-lg-4 col-md-6 col-12 mt-lg-0 mt-4">
                   <div class="pricing-box">
                     <div>
                       <div
-                        class="pricing-title-box d-flex align-items-center justify-content-btween gap-4"
+                        class="pricing-title-box d-flex align-items-center justify-content-between gap-4"
                       >
                         <div class="d-flex align-items-center gap-4">
                           <div class="icon-box">
@@ -1347,7 +1351,7 @@
                   <div class="pricing-box">
                     <div>
                       <div
-                        class="pricing-title-box d-flex align-items-center justify-content-btween gap-4"
+                        class="pricing-title-box d-flex align-items-center justify-content-between gap-4"
                       >
                         <div class="d-flex align-items-center gap-4">
                           <div class="icon-box">
@@ -1401,7 +1405,7 @@
             </div>
           </div>
 
-          <div class="testimonial-section">
+          <div class="testimonial-section" id="testimonial-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -1529,7 +1533,7 @@
             <!-- Slider main container -->
           </div>
 
-          <div class="blog-section">
+          <div class="blog-section" id="blog-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -1653,7 +1657,7 @@
             </div>
           </div>
 
-          <div class="faq-section">
+          <div class="faq-section" id="faq-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -1861,7 +1865,7 @@
             </div>
           </div>
 
-          <div class="ready-section">
+          <div class="ready-section" id="ready-section">
             <div class="container">
               <div class="row">
                 <div class="col-md-12">
@@ -1986,6 +1990,77 @@
         </footer>
       </div>
       <!--           end footer-->
+      <div class="chat-box">
+        <div class="chat-head d-flex flex-column align-items-end">
+          <div class="start-message">
+            <span class="text"> How can I help you? </span>
+            <span id="remove-chat-message">
+              <i class="fa fa-times"></i>
+            </span>
+          </div>
+          <div class="chat-container d-none">
+            <div class="chat-container-header">
+              <img
+                src="./assets/imgs/chat_header_img.svg"
+                loading="lazy"
+                alt=""
+              />
+              <span id="close-chat-message">
+                <i class="fa fa-times"></i>
+              </span>
+            </div>
+            <div
+              class="chat-container-content bg-white p-4 d-flex align-items-start gap-3"
+            >
+              <img
+                src="/assets/imgs/chat_logo.svg"
+                class="img-fluid"
+                loading="lazy"
+                alt="logo"
+              />
+              <div class="list">
+                <div class="message mb-3">Hi 👋, I'm Queue AI assistant.</div>
+                <div class="message mb-3">How can I assist you today?</div>
+                <div class="suggest mb-3">Learn about Queue ?</div>
+                <div class="suggest mb-3">Learn about pricing ?</div>
+                <div class="suggest mb-3">want to book demo ?</div>
+              </div>
+            </div>
+            <div class="chat-container-input bg-white">
+              <input
+                type="text"
+                id="chat-input"
+                class="bg-transparent border-0 w-100"
+                placeholder="Ask bot anything..."
+              />
+              <button id="send-chat-message" class="bg-transparent border-0">
+                <img
+                  src="./assets/imgs/send.svg"
+                  loading="lazy"
+                  alt="send"
+                  class="img-fluid"
+                />
+              </button>
+            </div>
+          </div>
+          <div class="chat-icon" id="open-chat-img">
+            <img
+              src="./assets/imgs/chat_icon.svg"
+              loading="lazy"
+              alt="chat"
+              class="img-fluid"
+            />
+          </div>
+          <div class="chat-icon d-none" id="close-chat-img">
+            <img
+              src="./assets/imgs/arrow_down.svg"
+              loading="lazy"
+              alt="chat"
+              class="img-fluid"
+            />
+          </div>
+        </div>
+      </div>
     </div>
     <script src="./assets/js/plugin/bootstrap.min.js"></script>
     <script src="./assets/js/plugin/all.min.js"></script>
