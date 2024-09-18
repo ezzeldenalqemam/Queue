@@ -215,7 +215,7 @@ input:focus {
 }
 .footer-section .subscribe-box {
   width: 60%;
-  margin-left: auto;
+  margin-inline-start: auto;
 }
 @media (max-width: 1200px) {
   .footer-section .subscribe-box {

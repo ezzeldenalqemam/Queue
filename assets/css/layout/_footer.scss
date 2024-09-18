@@ -22,7 +22,7 @@
   }
   .subscribe-box {
     width: 60%;
-    margin-left: auto;
+    margin-inline-start: auto;
     @include media(1200) {
       width: 100%;
     }
