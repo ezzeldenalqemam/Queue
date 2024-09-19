@@ -111,6 +111,7 @@ input:focus {
     z-index: 9999999;
     opacity: 0;
     visibility: hidden;
+    overflow-y: auto;
     transition: 0.2s all ease-in-out;
   }
   .header-container .header-section .nav-box.show-nav {
@@ -119,10 +120,16 @@ input:focus {
   }
   .header-container .header-section .nav-box .button-box {
     display: block;
+    padding: 37px 0;
   }
   .header-container .header-section .nav-box .button-box .button-header {
     display: block;
     text-align: center;
+  }
+}
+@media (max-width: 992px) and (max-height: 416px) {
+  .header-container .header-section .nav-box {
+    overflow-y: auto;
   }
 }
 .header-container .header-section .menu-box .lang-item {
@@ -631,6 +638,11 @@ html[dir=rtl] .services-section .services-box .services-slider .arrow-box {
   font-size: 30px;
   line-height: 38px;
 }
+@media (max-width: 772px) {
+  html[dir=rtl] .services-section .services-box .services-slider .content .title {
+    line-height: 50px;
+  }
+}
 .services-section .services-box .services-slider .content .prag {
   line-height: 24px;
   font-size: 16px;
@@ -664,6 +676,9 @@ html[dir=rtl] .services-section .services-box .services-slider .arrow-box {
   z-index: 1;
   position: relative;
   z-index: 1;
+}
+html[dir=rtl] .fields-section .fields-title-box .title {
+  line-height: 50px;
 }
 @media (max-width: 772px) {
   .fields-section .fields-title-box .title {
@@ -1194,6 +1209,9 @@ html[dir=ltr] .blog-section .blog-box .img-box::after {
   font-weight: 600;
   padding: 12px 0;
 }
+html[dir=rtl] .blog-section .blog-box .content .title {
+  line-height: 40px;
+}
 .blog-section .blog-box .content .title a {
   color: #1d1d35;
   transition: 0.2s all ease-in-out;
@@ -1637,7 +1655,7 @@ html[dir=ltr] .testimonial-section .swiper-content .testimonial-content .testimo
 }
 
 .chat-box {
-  z-index: 9999;
+  z-index: 99999999;
   position: fixed;
   bottom: 40px;
 }
@@ -1656,6 +1674,12 @@ html[dir=ltr] .chat-box {
   }
   html[dir=ltr] .chat-box {
     right: 10px;
+  }
+}
+@media (max-height: 320px) {
+  .chat-box .chat-head {
+    flex-direction: row !important;
+    gap: 12px;
   }
 }
 .chat-box .start-message {
@@ -1689,6 +1713,11 @@ html[dir=ltr] .chat-box {
   place-content: center;
   cursor: pointer;
 }
+@media (max-height: 320px) {
+  .chat-box .chat-icon#close-chat-img {
+    transform: rotate(-90deg);
+  }
+}
 .chat-box .chat-icon img {
   height: 39.22px;
 }
@@ -1716,6 +1745,11 @@ html[dir=ltr] .chat-box {
   background: #4abb82;
   padding: 18px 16px;
 }
+@media (max-height: 433px) {
+  .chat-box .chat-container .chat-container-header {
+    padding: 11px 16px;
+  }
+}
 .chat-box .chat-container .chat-container-header svg {
   height: 24px;
   color: #fff;
@@ -1736,6 +1770,17 @@ html[dir=ltr] .chat-box {
     font-size: 11px;
   }
 }
+@media (max-height: 433px) {
+  .chat-box .chat-container .chat-container-input {
+    padding: 12px 8px;
+  }
+  .chat-box .chat-container .chat-container-input input::-moz-placeholder {
+    font-size: 11px;
+  }
+  .chat-box .chat-container .chat-container-input input::placeholder {
+    font-size: 11px;
+  }
+}
 .chat-box .chat-container .chat-container-content {
   max-height: 360px;
   overflow-y: auto;
@@ -1744,6 +1789,11 @@ html[dir=ltr] .chat-box {
 @media (max-width: 772px) {
   .chat-box .chat-container .chat-container-content {
     max-height: 250px;
+  }
+}
+@media (max-height: 433px) {
+  .chat-box .chat-container .chat-container-content {
+    max-height: 142px;
   }
 }
 .chat-box .chat-container .chat-container-content::-webkit-scrollbar {
@@ -1775,6 +1825,12 @@ html[dir=ltr] .chat-box {
     padding: 12px;
   }
 }
+@media (max-height: 433px) {
+  .chat-box .chat-container .chat-container-content .list .message {
+    font-size: 13px;
+    padding: 12px;
+  }
+}
 .chat-box .chat-container .chat-container-content .list .suggest {
   color: #1d1d35;
   font-size: 14px;
@@ -1789,6 +1845,12 @@ html[dir=ltr] .chat-box {
 @media (max-width: 772px) {
   .chat-box .chat-container .chat-container-content .list .suggest {
     min-width: 100px;
+    font-size: 11px;
+    padding: 4px 12px;
+  }
+}
+@media (max-height: 433px) {
+  .chat-box .chat-container .chat-container-content .list .suggest {
     font-size: 11px;
     padding: 4px 12px;
   }

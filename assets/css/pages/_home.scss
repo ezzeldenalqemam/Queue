@@ -230,6 +230,11 @@
         .title {
           font-size: 30px;
           line-height: 38px;
+          @include media(772) {
+            @include dir(rtl) {
+              line-height: 50px;
+            }
+          }
         }
         .prag {
           line-height: 24px;
@@ -261,6 +266,9 @@
       font-weight: 600;
       width: fit-content;
       color: $color_dark;
+      @include dir(rtl) {
+        line-height: 50px;
+      }
       @include media(772) {
         font-size: 30px;
       }
@@ -756,7 +764,9 @@
         font-size: 24px;
         font-weight: 600;
         padding: 12px 0;
-
+        @include dir(rtl) {
+          line-height: 40px;
+        }
         a {
           color: $color_dark;
           @include hover {
